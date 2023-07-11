@@ -6,7 +6,7 @@ The course continues right where the Introduction to Programming course ended.
 
 #### Objects and methods
 1. [x] Programming exercise: The smallest average result
-2. [ ] Programming exercise: Row sums
+2. [x] Programming exercise: Row sums
 #### Classes and objects
 1. [ ] Programming exercise: List of years
 2. [ ] Programming exercise: Shopping list
