@@ -9,7 +9,7 @@ The course continues right where the Introduction to Programming course ended.
 2. [x] Programming exercise: Row sums
 #### Classes and objects
 1. [x] Programming exercise: List of years
-2. [ ] Programming exercise: Shopping list
+2. [x] Programming exercise: Shopping list
 #### Defining classes
 1. [ ] Programming exercise: Book
 2. [ ] Programming exercise: Three classes
