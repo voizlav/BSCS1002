@@ -11,7 +11,7 @@ The course continues right where the Introduction to Programming course ended.
 1. [x] Programming exercise: List of years
 2. [x] Programming exercise: Shopping list
 #### Defining classes
-1. [ ] Programming exercise: Book
+1. [x] Programming exercise: Book
 2. [ ] Programming exercise: Three classes
 3. [ ] Programming exercise: Define class: Pet
 4. [ ] Programming exercise: The older book
