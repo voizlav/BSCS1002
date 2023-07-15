@@ -15,7 +15,7 @@ The course continues right where the Introduction to Programming course ended.
 2. [x] Programming exercise: Three classes
 3. [x] Programming exercise: Define class: Pet
 4. [x] Programming exercise: The older book
-5. [ ] Programming exercise: Books of a genre
+5. [x] Programming exercise: Books of a genre
 #### Defining methods
 1. [ ] Programming exercise: Decreasing counter
 2. [ ] Programming exercise: First and last name
