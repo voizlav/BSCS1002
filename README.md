@@ -18,7 +18,7 @@ The course continues right where the Introduction to Programming course ended.
 5. [x] Programming exercise: Books of a genre
 #### Defining methods
 1. [x] Programming exercise: Decreasing counter
-2. [ ] Programming exercise: First and last name
+2. [x] Programming exercise: First and last name
 3. [ ] Programming exercise: Statistics on numbers
 #### More examples of classes
 1. [ ] Programming exercise: Stopwatch
