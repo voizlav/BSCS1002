@@ -1,3 +1,4 @@
+# Write your solution here!
 class NumberStats:
     def __init__(self):
         self.numbers = []
@@ -9,10 +10,10 @@ class NumberStats:
         return len(self.numbers)
 
     def get_sum(self) -> int:
-        return 0 if not self.numbers else sum(self.numbers)
+        return sum(self.numbers)
 
     def average(self) -> int:
-        return 0 if not self.numbers else self.get_sum() / self.count_numbers()
+        return 0.0 if not self.numbers else self.get_sum() / self.count_numbers()
 
 
 def main():
