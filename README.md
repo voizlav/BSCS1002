@@ -19,7 +19,7 @@ The course continues right where the Introduction to Programming course ended.
 #### Defining methods
 1. [x] Programming exercise: Decreasing counter
 2. [x] Programming exercise: First and last name
-3. [ ] Programming exercise: Statistics on numbers
+3. [x] Programming exercise: Statistics on numbers
 #### More examples of classes
 1. [ ] Programming exercise: Stopwatch
 2. [ ] Programming exercise: Clock
