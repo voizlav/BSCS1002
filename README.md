@@ -26,3 +26,28 @@ The course continues right where the Introduction to Programming course ended.
 3. [ ] Programming exercise: LunchCard
 4. [ ] Programming exercise: Series
 5. [ ] Quiz: Feedback, part 8
+
+# Part 9
+
+#### Objects and references
+1. [ ] Programming exercise: The fastest car
+2. [ ] Programming exercise: Passing submissions
+3. [ ] Programming exercise: Baby Centre
+4. [ ] Programming exercise: LunchCard and PaymentTerminal
+5. [ ] Programming exercise: Comparing properties
+#### Objects as attributes
+1. [ ] Programming exercise: Pets
+2. [ ] Programming exercise: A box of presents
+3. [ ] Programming exercise: The shortest person in the room
+#### Encapsulation
+1. [ ] Programming exercise: Car
+2. [ ] Programming exercise: Recording
+3. [ ] Programming exercise: Weather station
+#### Scope of methods
+1. [ ] Programming exercise: Service charge
+#### Class attributes
+1. [ ] Programming exercise: Postcodes
+2. [ ] Programming exercise: List helper
+#### More examples with classes
+1. [ ] Programming exercise: Item, Suitcase and Cargo hold
+2. [ ] Quiz: Feedback, part 9
