@@ -24,7 +24,7 @@ The course continues right where the Introduction to Programming course ended.
 1. [x] Programming exercise: Stopwatch
 2. [x] Programming exercise: Clock
 3. [x] Programming exercise: LunchCard
-4. [ ] Programming exercise: Series
+4. [x] Programming exercise: Series
 5. [ ] Quiz: Feedback, part 8
 
 # Part 9
