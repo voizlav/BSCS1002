@@ -23,7 +23,7 @@ The course continues right where the Introduction to Programming course ended.
 #### More examples of classes
 1. [x] Programming exercise: Stopwatch
 2. [x] Programming exercise: Clock
-3. [ ] Programming exercise: LunchCard
+3. [x] Programming exercise: LunchCard
 4. [ ] Programming exercise: Series
 5. [ ] Quiz: Feedback, part 8
 
