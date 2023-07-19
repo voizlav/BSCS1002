@@ -46,8 +46,9 @@ class PaymentTerminal:
         return subtract_allowed
 
     def deposit_money_on_card(self, card: LunchCard, amount: float):
-        self.funds += abs(amount)
-        card.deposit_money(abs(amount))
+        if amount > 0:
+            self.funds += amount
+            card.deposit_money(amount)
 
 
 if __name__ == "__main__":
