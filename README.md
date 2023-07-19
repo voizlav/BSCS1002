@@ -33,7 +33,7 @@ The course continues right where the Introduction to Programming course ended.
 1. [x] Programming exercise: The fastest car
 2. [x] Programming exercise: Passing submissions
 3. [x] Programming exercise: Baby Centre
-4. [ ] Programming exercise: LunchCard and PaymentTerminal
+4. [x] Programming exercise: LunchCard and PaymentTerminal
 5. [ ] Programming exercise: Comparing properties
 #### Objects as attributes
 1. [ ] Programming exercise: Pets
