@@ -31,7 +31,7 @@ The course continues right where the Introduction to Programming course ended.
 
 #### Objects and references
 1. [x] Programming exercise: The fastest car
-2. [ ] Programming exercise: Passing submissions
+2. [x] Programming exercise: Passing submissions
 3. [ ] Programming exercise: Baby Centre
 4. [ ] Programming exercise: LunchCard and PaymentTerminal
 5. [ ] Programming exercise: Comparing properties
