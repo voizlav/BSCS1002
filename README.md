@@ -34,7 +34,7 @@ The course continues right where the Introduction to Programming course ended.
 2. [x] Programming exercise: Passing submissions
 3. [x] Programming exercise: Baby Centre
 4. [x] Programming exercise: LunchCard and PaymentTerminal
-5. [ ] Programming exercise: Comparing properties
+5. [x] Programming exercise: Comparing properties
 #### Objects as attributes
 1. [ ] Programming exercise: Pets
 2. [ ] Programming exercise: A box of presents
