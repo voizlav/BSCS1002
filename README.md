@@ -37,7 +37,7 @@ The course continues right where the Introduction to Programming course ended.
 5. [x] Programming exercise: Comparing properties
 #### Objects as attributes
 1. [x] Programming exercise: Pets
-2. [ ] Programming exercise: A box of presents
+2. [x] Programming exercise: A box of presents
 3. [ ] Programming exercise: The shortest person in the room
 #### Encapsulation
 1. [ ] Programming exercise: Car
