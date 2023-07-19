@@ -30,7 +30,7 @@ The course continues right where the Introduction to Programming course ended.
 # Part 9
 
 #### Objects and references
-1. [ ] Programming exercise: The fastest car
+1. [x] Programming exercise: The fastest car
 2. [ ] Programming exercise: Passing submissions
 3. [ ] Programming exercise: Baby Centre
 4. [ ] Programming exercise: LunchCard and PaymentTerminal
