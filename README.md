@@ -40,7 +40,7 @@ The course continues right where the Introduction to Programming course ended.
 2. [x] Programming exercise: A box of presents
 3. [x] Programming exercise: The shortest person in the room
 #### Encapsulation
-1. [ ] Programming exercise: Car
+1. [x] Programming exercise: Car
 2. [ ] Programming exercise: Recording
 3. [ ] Programming exercise: Weather station
 #### Scope of methods
