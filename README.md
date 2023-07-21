@@ -42,7 +42,7 @@ The course continues right where the Introduction to Programming course ended.
 #### Encapsulation
 1. [x] Programming exercise: Car
 2. [x] Programming exercise: Recording
-3. [ ] Programming exercise: Weather station
+3. [x] Programming exercise: Weather station
 #### Scope of methods
 1. [ ] Programming exercise: Service charge
 #### Class attributes
