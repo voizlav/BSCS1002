@@ -51,3 +51,23 @@ The course continues right where the Introduction to Programming course ended.
 #### More examples with classes
 1. [ ] Programming exercise: Item, Suitcase and Cargo hold
 2. [ ] Quiz: Feedback, part 9
+
+# Part 10
+
+#### Class hierarchies
+1. [ ] Programming exercise: Laptop computer
+2. [ ] Programming exercise: Game Museum
+3. [ ] Programming exercise: Areas
+4. [ ] Programming exercise: Word game
+#### Access modifiers
+1. [ ] Programming exercise: Supergroup
+2. [ ] Programming exercise: Secret magic potion
+#### Object oriented programming techniques
+1. [ ] Programming exercise: Money
+2. [ ] Programming exercise: Simple date
+3. [ ] Programming exercise: An iterable shopping list
+#### Developing a larger application
+1. [ ] Programming exercise: Phone book expansion, version 1
+2. [ ] Programming exercise: Phone book expansion, version 2
+3. [ ] Programming exercise: CourseRecords
+4. [ ] Quiz: Feedback, part 10
