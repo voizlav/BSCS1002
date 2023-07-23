@@ -44,7 +44,7 @@ The course continues right where the Introduction to Programming course ended.
 2. [x] Programming exercise: Recording
 3. [x] Programming exercise: Weather station
 #### Scope of methods
-1. [ ] Programming exercise: Service charge
+1. [x] Programming exercise: Service charge
 #### Class attributes
 1. [ ] Programming exercise: Postcodes
 2. [ ] Programming exercise: List helper
