@@ -46,7 +46,7 @@ The course continues right where the Introduction to Programming course ended.
 #### Scope of methods
 1. [x] Programming exercise: Service charge
 #### Class attributes
-1. [ ] Programming exercise: Postcodes
+1. [x] Programming exercise: Postcodes
 2. [ ] Programming exercise: List helper
 #### More examples with classes
 1. [ ] Programming exercise: Item, Suitcase and Cargo hold
