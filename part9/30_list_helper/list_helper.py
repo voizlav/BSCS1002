@@ -3,13 +3,17 @@ class ListHelper:
         pass
 
     @classmethod
+    def __count(cls, my_list: list):
+        return {number: my_list.count(number) for number in my_list}
+
+    @classmethod
     def greatest_frequency(cls, my_list: list):
-        count = {number: my_list.count(number) for number in my_list}
+        count = ListHelper.__count(my_list)
         return max([(count[number], number) for number in count])[1]
 
     @classmethod
     def doubles(cls, my_list: list):
-        count = {number: my_list.count(number) for number in my_list}
+        count = ListHelper.__count(my_list)
         return sum(1 for number in count if count[number] > 1)
 
 
