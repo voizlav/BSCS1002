@@ -47,7 +47,7 @@ The course continues right where the Introduction to Programming course ended.
 1. [x] Programming exercise: Service charge
 #### Class attributes
 1. [x] Programming exercise: Postcodes
-2. [ ] Programming exercise: List helper
+2. [x] Programming exercise: List helper
 #### More examples with classes
 1. [ ] Programming exercise: Item, Suitcase and Cargo hold
 2. [ ] Quiz: Feedback, part 9
