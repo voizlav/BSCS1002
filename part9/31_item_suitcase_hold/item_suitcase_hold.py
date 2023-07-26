@@ -18,15 +18,19 @@ class Suitcase:
         self.__maximum_weight = maximum_weight
         self.__items = []
 
-    def __total_weight(self):
+    def weight(self):
         return sum(item.weight() for item in self.__items)
 
     def add_item(self, item: Item):
-        if self.__maximum_weight > self.__total_weight() + item.weight():
+        if self.__maximum_weight > self.weight() + item.weight():
             self.__items.append(item)
 
+    def print_items(self):
+        for item in self.__items:
+            print(item)
+
     def __str__(self):
-        return f"{len(self.__items)} {'item' if len(self.__items) == 1 else 'items'} ({self.__total_weight()} kg)"
+        return f"{len(self.__items)} {'item' if len(self.__items) == 1 else 'items'} ({self.weight()} kg)"
 
 
 class CargoHold:
@@ -38,14 +42,12 @@ if __name__ == "__main__":
     phone = Item("Nokia 3210", 1)
     brick = Item("Brick", 4)
 
-    suitcase = Suitcase(5)
-    print(suitcase)
-
+    suitcase = Suitcase(10)
     suitcase.add_item(book)
-    print(suitcase)
-
     suitcase.add_item(phone)
-    print(suitcase)
-
     suitcase.add_item(brick)
-    print(suitcase)
+
+    print("The suitcase contains the following items:")
+    suitcase.print_items()
+    combined_weight = suitcase.weight()
+    print(f"Combined weight: {combined_weight} kg")
