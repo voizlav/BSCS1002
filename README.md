@@ -1,6 +1,6 @@
 # BSCS1002: Advanced Course in Programming
 
-The course continues right where the Introduction to Programming course ended.
+The course continues right where the Introduction to Programming course ended, organized in co-operation between Open University and Bachelor's programme in Computer Science.
 
 # Part 8
 
