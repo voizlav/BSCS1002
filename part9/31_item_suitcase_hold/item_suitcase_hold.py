@@ -21,6 +21,11 @@ class Suitcase:
     def weight(self):
         return sum(item.weight() for item in self.__items)
 
+    def heaviest_item(self):
+        if not self.__items:
+            return None
+        return max([(item.weight(), item) for item in self.__items])[1]
+
     def add_item(self, item: Item):
         if self.__maximum_weight > self.weight() + item.weight():
             self.__items.append(item)
@@ -47,7 +52,5 @@ if __name__ == "__main__":
     suitcase.add_item(phone)
     suitcase.add_item(brick)
 
-    print("The suitcase contains the following items:")
-    suitcase.print_items()
-    combined_weight = suitcase.weight()
-    print(f"Combined weight: {combined_weight} kg")
+    heaviest = suitcase.heaviest_item()
+    print(f"The heaviest item: {heaviest}")
