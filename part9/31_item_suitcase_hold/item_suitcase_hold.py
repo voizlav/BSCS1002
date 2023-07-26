@@ -26,7 +26,7 @@ class Suitcase:
             self.__items.append(item)
 
     def __str__(self):
-        return f"{len(self.__items)} items ({self.__total_weight()} kg)"
+        return f"{len(self.__items)} {'item' if len(self.__items) == 1 else 'items'} ({self.__total_weight()} kg)"
 
 
 class CargoHold:
