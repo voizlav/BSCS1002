@@ -41,6 +41,7 @@ class LongestWord(WordGame):
             return 1
         if len(player2_word) > len(player1_word):
             return 2
+        return None
 
 
 class MostVowels(WordGame):
@@ -54,8 +55,26 @@ class MostVowels(WordGame):
             return 1
         if p2 > p1:
             return 2
+        return None
+
+
+class RockPaperScissors(WordGame):
+    def __init__(self, rounds: int):
+        super().__init__(rounds)
+
+    def round_winner(self, player1_word: str, player2_word: str):
+        rps = {"rock": "scissors", "paper": "rock", "scissors": "paper"}
+        if player1_word not in rps:
+            return 2 if player2_word in rps else None
+        if player2_word not in rps:
+            return 1
+        if rps[player1_word] == player2_word:
+            return 1
+        if rps[player2_word] == player1_word:
+            return 2
+        return None
 
 
 if __name__ == "__main__":
-    p = MostVowels(3)
+    p = RockPaperScissors(4)
     p.play()
