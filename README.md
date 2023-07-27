@@ -57,7 +57,7 @@ The course continues right where the Introduction to Programming course ended, o
 #### Class hierarchies
 1. [x] Programming exercise: Laptop computer
 2. [x] Programming exercise: Game Museum
-3. [ ] Programming exercise: Areas
+3. [x] Programming exercise: Areas
 4. [ ] Programming exercise: Word game
 #### Access modifiers
 1. [ ] Programming exercise: Supergroup
