@@ -58,7 +58,7 @@ The course continues right where the Introduction to Programming course ended, o
 1. [x] Programming exercise: Laptop computer
 2. [x] Programming exercise: Game Museum
 3. [x] Programming exercise: Areas
-4. [ ] Programming exercise: Word game
+4. [x] Programming exercise: Word game
 #### Access modifiers
 1. [ ] Programming exercise: Supergroup
 2. [ ] Programming exercise: Secret magic potion
