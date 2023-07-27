@@ -43,6 +43,19 @@ class LongestWord(WordGame):
             return 2
 
 
+class MostVowels(WordGame):
+    def __init__(self, rounds: int):
+        super().__init__(rounds)
+
+    def round_winner(self, player1_word: str, player2_word: str):
+        p1 = sum(player1_word.count(vowel) for vowel in "aeiou")
+        p2 = sum(player2_word.count(vowel) for vowel in "aeiou")
+        if p1 > p2:
+            return 1
+        if p2 > p1:
+            return 2
+
+
 if __name__ == "__main__":
-    p = LongestWord(3)
+    p = MostVowels(3)
     p.play()
