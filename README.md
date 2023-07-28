@@ -60,7 +60,7 @@ The course continues right where the Introduction to Programming course ended, o
 3. [x] Programming exercise: Areas
 4. [x] Programming exercise: Word game
 #### Access modifiers
-1. [ ] Programming exercise: Supergroup
+1. [x] Programming exercise: Supergroup
 2. [ ] Programming exercise: Secret magic potion
 #### Object oriented programming techniques
 1. [ ] Programming exercise: Money
