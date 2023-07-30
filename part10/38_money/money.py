@@ -21,10 +21,23 @@ class Money:
     def __gt__(self, other: 'Money'):
         return self.__money() > other.__money()
 
-if __name__ == "__main__":
-    e1 = Money(4, 10)
-    e2 = Money(2, 5)
+    def __add__(self, other: 'Money'):
+        return Money(self.euros + other.euros, self.cents + other.cents)
 
-    print(e1 != e2)
-    print(e1 < e2)
-    print(e1 > e2)
+    def __sub__(self, other: 'Money'):
+        if self < other:
+            raise ValueError("a negative result is not allowed")
+        return Money(self.euros - other.euros, self.cents - other.cents)
+
+
+if __name__ == "__main__":
+    e1 = Money(4, 5)
+    e2 = Money(2, 95)
+
+    e3 = e1 + e2
+    e4 = e1 - e2
+
+    print(e3)
+    print(e4)
+
+    e5 = e2 - e1
