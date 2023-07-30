@@ -63,7 +63,7 @@ The course continues right where the Introduction to Programming course ended, o
 1. [x] Programming exercise: Supergroup
 2. [x] Programming exercise: Secret magic potion
 #### Object oriented programming techniques
-1. [ ] Programming exercise: Money
+1. [x] Programming exercise: Money
 2. [ ] Programming exercise: Simple date
 3. [ ] Programming exercise: An iterable shopping list
 #### Developing a larger application
