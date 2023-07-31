@@ -67,7 +67,7 @@ The course continues right where the Introduction to Programming course ended, o
 2. [x] Programming exercise: Simple date
 3. [x] Programming exercise: An iterable shopping list
 #### Developing a larger application
-1. [ ] Programming exercise: Phone book expansion, version 1
+1. [x] Programming exercise: Phone book expansion, version 1
 2. [ ] Programming exercise: Phone book expansion, version 2
 3. [ ] Programming exercise: CourseRecords
 4. [ ] Quiz: Feedback, part 10
