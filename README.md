@@ -65,7 +65,7 @@ The course continues right where the Introduction to Programming course ended, o
 #### Object oriented programming techniques
 1. [x] Programming exercise: Money
 2. [x] Programming exercise: Simple date
-3. [ ] Programming exercise: An iterable shopping list
+3. [x] Programming exercise: An iterable shopping list
 #### Developing a larger application
 1. [ ] Programming exercise: Phone book expansion, version 1
 2. [ ] Programming exercise: Phone book expansion, version 2
