@@ -3,17 +3,18 @@ class PhoneBook:
         self.__persons = {}
 
     def add_number(self, name: str, number: str):
-        if not name in self.__persons:
+        if name not in self.__persons:
             self.__persons[name] = []
         self.__persons[name].append(number)
 
     def get_entry(self, name: str):
-        if not name in self.__persons:
+        if name not in self.__persons:
             return None
         return self.__persons[name]
 
     def all_entries(self):
         return self.__persons
+
 
 class PhoneBookApplication:
     def __init__(self):
@@ -33,7 +34,7 @@ class PhoneBookApplication:
     def search(self):
         name = input("name: ")
         numbers = self.__phonebook.get_entry(name)
-        if numbers == None:
+        if numbers is None:
             print("number unknown")
             return
         for number in numbers:
@@ -52,6 +53,28 @@ class PhoneBookApplication:
                 self.search()
             else:
                 self.help()
+
+
+class Person:
+    def __init__(self, name: str):
+        self.__name = name
+        self.__numbers = []
+        self.__address = None
+
+    def name(self):
+        return self.__name
+
+    def numbers(self):
+        return self.__numbers
+
+    def address(self):
+        return self.__address
+
+    def add_number(self, number: str):
+        self.__numbers.append(number)
+
+    def add_address(self, address: str):
+        self.__address = address
 
 
 # when testing, no code should be outside application except the following:
