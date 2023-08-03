@@ -4,13 +4,13 @@ class PhoneBook:
 
     def add_number(self, name: str, number: str):
         if name not in self.__persons:
-            self.__persons[name] = []
-        self.__persons[name].append(number)
+            self.__persons[name] = Person(name)
+        self.__persons[name].add_number(number)
 
     def get_entry(self, name: str):
         if name not in self.__persons:
             return None
-        return self.__persons[name]
+        return self.__persons[name].numbers()
 
     def all_entries(self):
         return self.__persons
