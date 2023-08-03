@@ -7,6 +7,16 @@ class PhoneBook:
             self.__persons[name] = Person(name)
         self.__persons[name].add_number(number)
 
+    def add_address(self, name: str, address: str):
+        if name not in self.__persons:
+            self.__persons[name] = Person(name)
+        self.__persons[name].add_address(address)
+
+    def get_address(self, name: str):
+        if name not in self.__persons:
+            return None
+        return self.__persons[name].address()
+
     def get_entry(self, name: str):
         if name not in self.__persons:
             return None
@@ -25,20 +35,33 @@ class PhoneBookApplication:
         print("0 exit")
         print("1 add number")
         print("2 search")
+        print("3 address")
 
     def add_number(self):
         name = input("name: ")
         number = input("number: ")
         self.__phonebook.add_number(name, number)
 
+    def add_address(self):
+        name = input("name: ")
+        address = input("address: ")
+        self.__phonebook.add_address(name, address)
+
     def search(self):
         name = input("name: ")
         numbers = self.__phonebook.get_entry(name)
-        if numbers is None:
+        address = self.__phonebook.get_address(name)
+
+        if not numbers:
             print("number unknown")
-            return
-        for number in numbers:
-            print(number)
+        else:
+            for number in numbers:
+                print(number)
+        if not address:
+            print("address unknown")
+        else:
+            print(address)
+
 
     def execute(self):
         self.help()
@@ -51,6 +74,8 @@ class PhoneBookApplication:
                 self.add_number()
             elif command == "2":
                 self.search()
+            elif command == "3":
+                self.add_address()
             else:
                 self.help()
 
