@@ -71,3 +71,30 @@ The course continues right where the Introduction to Programming course ended, o
 2. [x] Programming exercise: Phone book expansion, version 2
 3. [ ] Programming exercise: CourseRecords
 4. [ ] Quiz: Feedback, part 10
+
+# Part 11
+
+#### List comprehensions
+1. [ ] Programming exercise: Square roots
+2. [ ] Programming exercise: Rows of stars
+3. [ ] Programming exercise: Best exam result
+4. [ ] Programming exercise: Lengths
+5. [ ] Programming exercise: Remove smaller than
+6. [ ] Programming exercise: Begin with a vowel
+7. [ ] Programming exercise: Lottery numbers
+#### More comprehensions
+1. [ ] Programming exercise: Filter forbidden
+2. [ ] Programming exercise: Products in shopping list
+3. [ ] Programming exercise: Price difference of cheaper properties
+4. [ ] Programming exercise: Lengths of strings
+5. [ ] Programming exercise: Most common words
+#### Recursion
+1. [ ] Programming exercise: Add numbers to a list
+2. [ ] Programming exercise: Recursive sum
+3. [ ] Programming exercise: Balance all the brackets
+#### More recursion examples
+1. [ ] Programming exercise: Greatest node
+2. [ ] Programming exercise: Bosses and subordinates
+3. [ ] Programming exercise: OrderBook
+4. [ ] Programming exercise: Order book application
+5. [ ] Quiz: Feedback, part 11
