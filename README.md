@@ -75,7 +75,7 @@ The course continues right where the Introduction to Programming course ended, o
 # Part 11
 
 #### List comprehensions
-1. [ ] Programming exercise: Square roots
+1. [x] Programming exercise: Square roots
 2. [ ] Programming exercise: Rows of stars
 3. [ ] Programming exercise: Best exam result
 4. [ ] Programming exercise: Lengths
