@@ -81,7 +81,7 @@ The course continues right where the Introduction to Programming course ended, o
 4. [x] Programming exercise: Lengths
 5. [x] Programming exercise: Remove smaller than
 6. [x] Programming exercise: Begin with a vowel
-7. [ ] Programming exercise: Lottery numbers
+7. [x] Programming exercise: Lottery numbers
 #### More comprehensions
 1. [ ] Programming exercise: Filter forbidden
 2. [ ] Programming exercise: Products in shopping list
