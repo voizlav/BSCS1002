@@ -1,5 +1,5 @@
 def filter_forbidden(string: str, forbidden: str):
-    return "".join([letter for letter in string if letter not in forbidden])
+    return "".join([char for char in string if char not in forbidden])
 
 
 if __name__ == "__main__":
