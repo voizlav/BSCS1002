@@ -85,7 +85,7 @@ The course continues right where the Introduction to Programming course ended, o
 #### More comprehensions
 1. [x] Programming exercise: Filter forbidden
 2. [x] Programming exercise: Products in shopping list
-3. [ ] Programming exercise: Price difference of cheaper properties
+3. [x] Programming exercise: Price difference of cheaper properties
 4. [ ] Programming exercise: Lengths of strings
 5. [ ] Programming exercise: Most common words
 #### Recursion
