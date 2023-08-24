@@ -87,7 +87,7 @@ The course continues right where the Introduction to Programming course ended, o
 2. [x] Programming exercise: Products in shopping list
 3. [x] Programming exercise: Price difference of cheaper properties
 4. [x] Programming exercise: Lengths of strings
-5. [ ] Programming exercise: Most common words
+5. [x] Programming exercise: Most common words
 #### Recursion
 1. [ ] Programming exercise: Add numbers to a list
 2. [ ] Programming exercise: Recursive sum
