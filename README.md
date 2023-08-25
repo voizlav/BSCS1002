@@ -91,7 +91,7 @@ The course continues right where the Introduction to Programming course ended, o
 #### Recursion
 1. [x] Programming exercise: Add numbers to a list
 2. [x] Programming exercise: Recursive sum
-3. [ ] Programming exercise: Balance all the brackets
+3. [x] Programming exercise: Balance all the brackets
 #### More recursion examples
 1. [ ] Programming exercise: Greatest node
 2. [ ] Programming exercise: Bosses and subordinates
