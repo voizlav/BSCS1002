@@ -90,7 +90,7 @@ The course continues right where the Introduction to Programming course ended, o
 5. [x] Programming exercise: Most common words
 #### Recursion
 1. [x] Programming exercise: Add numbers to a list
-2. [ ] Programming exercise: Recursive sum
+2. [x] Programming exercise: Recursive sum
 3. [ ] Programming exercise: Balance all the brackets
 #### More recursion examples
 1. [ ] Programming exercise: Greatest node
