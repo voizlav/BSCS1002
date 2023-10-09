@@ -98,3 +98,24 @@ The course continues right where the Introduction to Programming course ended, o
 3. [ ] Programming exercise: OrderBook
 4. [ ] Programming exercise: Order book application
 5. [ ] Quiz: Feedback, part 11
+
+#### Functions as arguments
+1. [ ] Programming exercise: Sort by remaining stock
+2. [ ] Programming exercise: Sort by number of seasons
+3. [ ] Programming exercise: Sort by ratings
+4. [ ] Programming exercise: ClimbingRoute
+5. [ ] Programming exercise: Climbing areas
+6. [ ] Programming exercise: BallPlayers
+7. [ ] Programming exercise: Product search
+#### Generators
+1. [ ] Programming exercise: Even numbers
+2. [ ] Programming exercise: Prime numbers
+3. [ ] Programming exercise: Random words
+#### Functional programming
+1. [ ] Programming exercise: Attempted courses
+2. [ ] Programming exercise: Filtering attempts
+3. [ ] Programming exercise: Study credits
+#### Regular expressions
+1. [ ] Programming exercise: Regular expressions
+2. [ ] Programming exercise: Hockey statistics
+3. [ ] Quiz: Feedback, part 12
