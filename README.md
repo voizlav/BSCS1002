@@ -93,11 +93,13 @@ The course continues right where the Introduction to Programming course ended, o
 2. [x] Programming exercise: Recursive sum
 3. [x] Programming exercise: Balance all the brackets
 #### More recursion examples
-1. [ ] Programming exercise: Greatest node
+1. [x] Programming exercise: Greatest node
 2. [ ] Programming exercise: Bosses and subordinates
 3. [ ] Programming exercise: OrderBook
 4. [ ] Programming exercise: Order book application
 5. [ ] Quiz: Feedback, part 11
+
+# Part 12
 
 #### Functions as arguments
 1. [ ] Programming exercise: Sort by remaining stock
