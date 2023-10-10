@@ -39,6 +39,10 @@ class OrderBook:
     def programmers(self):
         return set(task.programmer for task in self.all_orders())
 
+    def mark_finished(self, id: int):
+        for order in self.all_orders():
+            order.mark_finished() if order.id == id else None
+
 
 if __name__ == "__main__":
     orders = OrderBook()
@@ -46,10 +50,8 @@ if __name__ == "__main__":
     orders.add_order("program mobile app for workload accounting", "Eric", 25)
     orders.add_order("program app for practising mathematics", "Adele", 100)
 
+    orders.mark_finished(1)
+    orders.mark_finished(2)
+
     for order in orders.all_orders():
         print(order)
-
-    print()
-
-    for programmer in orders.programmers():
-        print(programmer)
