@@ -95,7 +95,7 @@ The course continues right where the Introduction to Programming course ended, o
 #### More recursion examples
 1. [x] Programming exercise: Greatest node
 2. [x] Programming exercise: Bosses and subordinates
-3. [ ] Programming exercise: OrderBook
+3. [x] Programming exercise: OrderBook
 4. [ ] Programming exercise: Order book application
 5. [ ] Quiz: Feedback, part 11
 
