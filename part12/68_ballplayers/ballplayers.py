@@ -22,6 +22,10 @@ def most_points(team: list):
     return (player.name, player.number)
 
 
+def least_minutes(team: list):
+    return min(team, key=lambda player: player.minutes)
+
+
 if __name__ == "__main__":
     player1 = BallPlayer("Archie Bonkers", 13, 5, 12, 46)
     player2 = BallPlayer("Speedy Tickets", 7, 2, 26, 55)
@@ -32,3 +36,4 @@ if __name__ == "__main__":
     team = [player1, player2, player3, player4, player5]
     print(most_goals(team))
     print(most_points(team))
+    print(least_minutes(team))
