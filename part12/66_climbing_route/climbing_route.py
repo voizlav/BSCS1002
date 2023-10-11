@@ -15,6 +15,13 @@ def sort_by_length(routes: list):
     return sorted(routes, key=order_length, reverse=True)
 
 
+def sort_by_difficulty(routes: list):
+    def order_difficulty(route: ClimbingRoute):
+        return (route.grade, route.length)
+
+    return sorted(routes, key=order_difficulty, reverse=True)
+
+
 if __name__ == "__main__":
     r1 = ClimbingRoute("Edge", 38, "6A+")
     r2 = ClimbingRoute("Smooth operator", 11, "7A")
@@ -24,4 +31,7 @@ if __name__ == "__main__":
     routes = [r1, r2, r3, r4]
 
     for route in sort_by_length(routes):
+        print(route)
+
+    for route in sort_by_difficulty(routes):
         print(route)
