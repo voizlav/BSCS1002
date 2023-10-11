@@ -14,7 +14,12 @@ class BallPlayer:
 
 
 def most_goals(team: list):
-    return max(team, key=lambda player: player.goals)
+    return max(team, key=lambda player: player.goals).name
+
+
+def most_points(team: list):
+    player = max(team, key=lambda player: player.goals + player.passes)
+    return (player.name, player.number)
 
 
 if __name__ == "__main__":
@@ -26,3 +31,4 @@ if __name__ == "__main__":
 
     team = [player1, player2, player3, player4, player5]
     print(most_goals(team))
+    print(most_points(team))
