@@ -38,6 +38,13 @@ def sort_by_number_of_routes(areas: list):
     return sorted(areas, key=order_by_routes)
 
 
+def sort_by_most_difficult(areas: list):
+    def order_by_difficult(area: ClimbingArea):
+        return area.hardest_route().grade
+
+    return sorted(areas, key=order_by_difficult, reverse=True)
+
+
 if __name__ == "__main__":
     ca1 = ClimbingArea("Olhava")
     ca1.add_route(ClimbingRoute("Edge", 38, "6A+"))
@@ -55,4 +62,7 @@ if __name__ == "__main__":
 
     areas = [ca1, ca2, ca3]
     for area in sort_by_number_of_routes(areas):
+        print(area)
+
+    for area in sort_by_most_difficult(areas):
         print(area)
