@@ -105,7 +105,7 @@ The course continues right where the Introduction to Programming course ended, o
 1. [x] Programming exercise: Sort by remaining stock
 2. [x] Programming exercise: Sort by number of seasons
 3. [x] Programming exercise: Sort by ratings
-4. [ ] Programming exercise: ClimbingRoute
+4. [x] Programming exercise: ClimbingRoute
 5. [ ] Programming exercise: Climbing areas
 6. [ ] Programming exercise: BallPlayers
 7. [ ] Programming exercise: Product search
