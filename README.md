@@ -108,7 +108,7 @@ The course continues right where the Introduction to Programming course ended, o
 4. [x] Programming exercise: ClimbingRoute
 5. [x] Programming exercise: Climbing areas
 6. [x] Programming exercise: BallPlayers
-7. [ ] Programming exercise: Product search
+7. [x] Programming exercise: Product search
 #### Generators
 1. [ ] Programming exercise: Even numbers
 2. [ ] Programming exercise: Prime numbers
