@@ -37,21 +37,55 @@ class OrderBook:
         return self.tasks
 
     def programmers(self):
-        return set(task.programmer for task in self.all_orders())
+        return list(set(task.programmer for task in self.all_orders()))
+
+    def valid_programmer(self, programmer: str):
+        if not programmer in self.programmers():
+            raise ValueError
+
+    def valid_id(self, id: int):
+        if id not in [order.id for order in self.all_orders()]:
+            raise ValueError
 
     def mark_finished(self, id: int):
+        self.valid_id(id=id)
+
         for order in self.all_orders():
             order.mark_finished() if order.id == id else None
+
+    def finished_orders(self):
+        return [order for order in self.all_orders() if order.is_finished()]
+
+    def unfinished_orders(self):
+        return [order for order in self.all_orders() if not order.is_finished()]
+
+    def status_of_programmer(self, programmer: str):
+        self.valid_programmer(programmer=programmer)
+
+        result = [0, 0, 0, 0]
+
+        for order in self.finished_orders():
+            if order.programmer == programmer:
+                result[0] += 1
+                result[2] += order.workload
+
+        for order in self.unfinished_orders():
+            if order.programmer == programmer:
+                result[1] += 1
+                result[3] += order.workload
+
+        return tuple(result)
 
 
 if __name__ == "__main__":
     orders = OrderBook()
     orders.add_order("program webstore", "Adele", 10)
-    orders.add_order("program mobile app for workload accounting", "Eric", 25)
+    orders.add_order("program mobile app for workload accounting", "Adele", 25)
     orders.add_order("program app for practising mathematics", "Adele", 100)
+    orders.add_order("program the next facebook", "Eric", 1000)
 
     orders.mark_finished(1)
     orders.mark_finished(2)
 
-    for order in orders.all_orders():
-        print(order)
+    status = orders.status_of_programmer("Adele")
+    print(status)
