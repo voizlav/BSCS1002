@@ -67,11 +67,83 @@ class OrderBook:
         for order in self.finished_orders():
             if order.programmer == programmer:
                 result[0] += 1
-                result[2] += order.workload
+                result[2] += int(order.workload)
 
         for order in self.unfinished_orders():
             if order.programmer == programmer:
                 result[1] += 1
-                result[3] += order.workload
+                result[3] += int(order.workload)
 
         return tuple(result)
+
+
+class AppInterface:
+    def __init__(self):
+        self.order_book = OrderBook()
+
+    def input_commands(self):
+        print("commands:")
+        print("0 exit")
+        print("1 add order")
+        print("2 list finished tasks")
+        print("3 list unfinished tasks")
+        print("4 mark task as finished")
+        print("5 programmers")
+        print("6 status of programmer")
+
+    def input_add_order(self):
+        description = input("description: ")
+        programmer, workload = input("programmer and workload estimate: ").split(" ")
+        self.order_book.add_order(
+            description=description, programmer=programmer, workload=workload
+        )
+        print("added!")
+
+    def list_finished_orders(self):
+        orders = self.order_book.finished_orders()
+        [print(order) for order in orders] if orders else print("no finished tasks")
+
+    def list_unfinished_orders(self):
+        orders = self.order_book.unfinished_orders()
+        [print(order) for order in orders] if orders else print("no tasks")
+
+    def input_finished_order(self):
+        id = int(input("id: "))
+        self.order_book.mark_finished(id=id)
+        print("marked as finished")
+
+    def list_programmers(self):
+        for programmer in self.order_book.programmers():
+            print(programmer)
+
+    def list_programmer_status(self):
+        status = input("programmer: ")
+        status = self.order_book.status_of_programmer(status)
+        print(f"tasks: finished {status[0]}", end=" ")
+        print(f"not finished {status[1]},", end=" ")
+        print(f"hours: done {status[2]}", end=" ")
+        print(f"scheduled {status[3]}")
+
+    def run(self):
+        self.input_commands()
+
+        while True:
+            command = input("\ncommand: ")
+            if command == "0":
+                break
+            if command == "1":
+                self.input_add_order()
+            if command == "2":
+                self.list_finished_orders()
+            if command == "3":
+                self.list_unfinished_orders()
+            if command == "4":
+                self.input_finished_order()
+            if command == "5":
+                self.list_programmers()
+            if command == "6":
+                self.list_programmer_status()
+
+
+app = AppInterface()
+app.run()
