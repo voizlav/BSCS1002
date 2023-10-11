@@ -102,7 +102,7 @@ The course continues right where the Introduction to Programming course ended, o
 # Part 12
 
 #### Functions as arguments
-1. [ ] Programming exercise: Sort by remaining stock
+1. [x] Programming exercise: Sort by remaining stock
 2. [ ] Programming exercise: Sort by number of seasons
 3. [ ] Programming exercise: Sort by ratings
 4. [ ] Programming exercise: ClimbingRoute
