@@ -30,7 +30,7 @@ class OrderBook:
         self.tasks = []
 
     def add_order(self, description: str, programmer: str, workload: int):
-        task = Task(description=description, programmer=programmer, workload=workload)
+        task = Task(description, programmer, workload)
         self.tasks.append(task)
 
     def all_orders(self):
@@ -48,7 +48,7 @@ class OrderBook:
             raise ValueError
 
     def mark_finished(self, id: int):
-        self.valid_id(id=id)
+        self.valid_id(id)
 
         for order in self.all_orders():
             order.mark_finished() if order.id == id else None
@@ -60,7 +60,7 @@ class OrderBook:
         return [order for order in self.all_orders() if not order.is_finished()]
 
     def status_of_programmer(self, programmer: str):
-        self.valid_programmer(programmer=programmer)
+        self.valid_programmer(programmer)
 
         result = [0, 0, 0, 0]
 
@@ -93,10 +93,14 @@ class AppInterface:
 
     def input_add_order(self):
         description = input("description: ")
-        programmer, workload = input("programmer and workload estimate: ").split(" ")
-        self.order_book.add_order(
-            description=description, programmer=programmer, workload=workload
-        )
+        prog_and_worload = input("programmer and workload estimate: ")
+        try:
+            programmer, workload = prog_and_worload.split(" ")
+            int(workload)
+        except ValueError:
+            return print("erroneous input")
+
+        self.order_book.add_order(description, programmer, workload)
         print("added!")
 
     def list_finished_orders(self):
@@ -108,8 +112,12 @@ class AppInterface:
         [print(order) for order in orders] if orders else print("no tasks")
 
     def input_finished_order(self):
-        id = int(input("id: "))
-        self.order_book.mark_finished(id=id)
+        try:
+            id = int(input("id: "))
+            self.order_book.mark_finished(id)
+        except ValueError:
+            return print("erroneous input")
+
         print("marked as finished")
 
     def list_programmers(self):
@@ -118,7 +126,11 @@ class AppInterface:
 
     def list_programmer_status(self):
         status = input("programmer: ")
-        status = self.order_book.status_of_programmer(status)
+        try:
+            status = self.order_book.status_of_programmer(status)
+        except ValueError:
+            return print("erroneous input")
+
         print(f"tasks: finished {status[0]}", end=" ")
         print(f"not finished {status[1]},", end=" ")
         print(f"hours: done {status[2]}", end=" ")
