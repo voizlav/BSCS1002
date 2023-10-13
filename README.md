@@ -112,7 +112,7 @@ The course continues right where the Introduction to Programming course ended, o
 #### Generators
 1. [x] Programming exercise: Even numbers
 2. [x] Programming exercise: Prime numbers
-3. [ ] Programming exercise: Random words
+3. [x] Programming exercise: Random words
 #### Functional programming
 1. [ ] Programming exercise: Attempted courses
 2. [ ] Programming exercise: Filtering attempts
