@@ -18,11 +18,16 @@ def attempts_with_grade(attempts: list, grade: int):
     return filter(lambda attempt: attempt.grade == grade, attempts)
 
 
+def passed_students(attempts: list, course: str):
+    attempts = filter(lambda a: a.course_name == course and a.grade > 0, attempts)
+    return sorted(set(map(lambda attempt: attempt.student_name, attempts)))
+
+
 if __name__ == "__main__":
     s1 = CourseAttempt("Peter Python", "Introduction to Programming", 3)
-    s2 = CourseAttempt("Olivia C. Objective", "Introduction to Programming", 5)
-    s3 = CourseAttempt("Peter Python", "Introduction to AI", 3)
-    s4 = CourseAttempt("Olivia C. Objective", "Data Structures and Algorithms", 3)
+    s2 = CourseAttempt("Olivia C. Objective", "Introduction to AI", 5)
+    s3 = CourseAttempt("Peter Python", "Introduction to AI", 0)
+    s4 = CourseAttempt("Jack Java", "Introduction to AI", 3)
 
-    for attempt in attempts_with_grade([s1, s2, s3, s4], 3):
+    for attempt in passed_students([s1, s2, s3, s4], "Introduction to AI"):
         print(attempt)
