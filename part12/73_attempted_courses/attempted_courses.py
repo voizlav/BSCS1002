@@ -14,10 +14,17 @@ def names_of_students(attempts: list):
     return map(lambda attempt: attempt.student_name, attempts)
 
 
+def course_names(attempts: list):
+    return set(map(lambda attempt: attempt.course_name, attempts))
+
+
 if __name__ == "__main__":
     s1 = CourseAttempt("Peter Python", "Introduction to Programming", 3)
     s2 = CourseAttempt("Olivia C. Objective", "Introduction to Programming", 5)
     s3 = CourseAttempt("Peter Python", "Advanced Course in Programming", 2)
 
     for name in names_of_students([s1, s2, s3]):
+        print(name)
+
+    for name in course_names([s1, s2, s3]):
         print(name)
