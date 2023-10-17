@@ -10,4 +10,9 @@ class CourseAttempt:
         )
 
 
-# Write your solution here
+if __name__ == "__main__":
+    attempt = CourseAttempt("Peter Python", "Introduction to Programming", 5)
+    print(attempt.student_name)
+    print(attempt.course_name)
+    print(attempt.grade)
+    print(attempt)
