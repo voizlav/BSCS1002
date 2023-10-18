@@ -116,7 +116,7 @@ The course continues right where the Introduction to Programming course ended, o
 #### Functional programming
 1. [x] Programming exercise: Attempted courses
 2. [x] Programming exercise: Filtering attempts
-3. [ ] Programming exercise: Study credits
+3. [x] Programming exercise: Study credits
 #### Regular expressions
 1. [ ] Programming exercise: Regular expressions
 2. [ ] Programming exercise: Hockey statistics
