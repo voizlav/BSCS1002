@@ -78,6 +78,10 @@ class AppInterface:
         print()
         print(player)
 
+    def print_teams(self):
+        for team in self.all.teams():
+            print(team)
+
     def commands(self):
         print(
             f"commands:\n"
@@ -103,7 +107,7 @@ class AppInterface:
                 get_name = input("name: ")
                 self.print_player(get_name)
             if command == "2":
-                break
+                self.print_teams()
             if command == "3":
                 break
             if command == "4":
@@ -118,7 +122,4 @@ class AppInterface:
 
 if __name__ == "__main__":
     app = AppInterface()
-    # app.run()
-    app.load_data("partial.json")
-    for team in app.all.teams():
-        print(team)
+    app.run()
