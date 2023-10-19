@@ -20,6 +20,13 @@ class Player:
         self.team = team
         self.games = games
 
+    def __str__(self):
+        return (
+            f"{self.name:<20} {self.team} "
+            f"{self.goals:>3} + {self.assists:>2} = "
+            f"{self.goals + self.assists:>3}"
+        )
+
 
 class Players:
     def __init__(self):
@@ -61,3 +68,5 @@ class AppInterface:
 if __name__ == "__main__":
     app = AppInterface()
     app.load_data("partial.json")
+    for player in app.all.players:
+        print(player)
