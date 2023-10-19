@@ -1,3 +1,6 @@
+import json
+
+
 class Player:
     def __init__(
         self,
@@ -25,6 +28,24 @@ class Players:
     def add_player(self, player: Player):
         self.players.append(player)
 
+    def load_players(self, path: str):
+        with open(path) as data:
+            players = json.loads(data.read())
+
+        for player in players:
+            self.add_player(
+                Player(
+                    player["name"],
+                    player["nationality"],
+                    player["assists"],
+                    player["goals"],
+                    player["penalties"],
+                    player["team"],
+                    player["games"],
+                )
+            )
+        return len(self.players)
+
 
 class AppInterface:
     def __init__(self):
@@ -33,4 +54,3 @@ class AppInterface:
 
 if __name__ == "__main__":
     app = AppInterface()
-    print(app.all.players)
