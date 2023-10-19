@@ -26,6 +26,7 @@ class Player:
             f"{self.goals:>3} + {self.assists:>2} = "
             f"{self.goals + self.assists:>3}"
         )
+        # return f"{self.name:<20} {self.team} {self.goals:>3} + {self.assists:>2} = {self.goals + self.assists:>3}"
 
 
 class Players:
@@ -55,6 +56,10 @@ class Players:
     def number_of_players(self):
         return len(self.players)
 
+    def search_player(self, name: str):
+        player = filter(lambda player: player.name == name, self.players)
+        return next(player, "No such a player")
+
 
 class AppInterface:
     def __init__(self):
@@ -74,7 +79,7 @@ class AppInterface:
             f"4 players in team\n"
             f"5 players from country\n"
             f"6 most points\n"
-            f"7 most goals\n"
+            f"7 most goals"
         )
 
     def run(self):
@@ -82,7 +87,7 @@ class AppInterface:
         self.load_data(get_path)
         self.commands()
         while True:
-            command = input("command: ")
+            command = input("\ncommand: ")
             if command == "0":
                 break
             if command == "1":
@@ -104,5 +109,3 @@ class AppInterface:
 if __name__ == "__main__":
     app = AppInterface()
     app.run()
-    # for player in app.all.players:
-    #     print(player)
