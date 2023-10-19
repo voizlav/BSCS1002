@@ -60,6 +60,10 @@ class Players:
         player = filter(lambda player: player.name == name, self.players)
         return next(player, "No such a player")
 
+    def teams(self):
+        teams = map(lambda player: player.team, self.players)
+        return sorted(set(teams))
+
 
 class AppInterface:
     def __init__(self):
@@ -114,4 +118,7 @@ class AppInterface:
 
 if __name__ == "__main__":
     app = AppInterface()
-    app.run()
+    # app.run()
+    app.load_data("partial.json")
+    for team in app.all.teams():
+        print(team)
