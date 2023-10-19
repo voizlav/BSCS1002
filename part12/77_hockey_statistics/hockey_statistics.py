@@ -26,7 +26,6 @@ class Player:
             f"{self.goals:>3} + {self.assists:>2} = "
             f"{self.goals + self.assists:>3}"
         )
-        # return f"{self.name:<20} {self.team} {self.goals:>3} + {self.assists:>2} = {self.goals + self.assists:>3}"
 
 
 class Players:
@@ -64,6 +63,10 @@ class Players:
         teams = map(lambda player: player.team, self.players)
         return sorted(set(teams))
 
+    def countries(self):
+        countries = map(lambda player: player.nationality, self.players)
+        return sorted(set(countries))
+
 
 class AppInterface:
     def __init__(self):
@@ -74,9 +77,8 @@ class AppInterface:
         print(f"read the data of {self.all.number_of_players()} players\n")
 
     def print_player(self, name: str):
-        player = self.all.search_player(name)
         print()
-        print(player)
+        print(self.all.search_player(name))
 
     def print_teams(self):
         for team in self.all.teams():
