@@ -44,6 +44,8 @@ class Players:
                     player["games"],
                 )
             )
+
+    def number_of_players(self):
         return len(self.players)
 
 
@@ -52,9 +54,10 @@ class AppInterface:
         self.all = Players()
 
     def load_data(self, path: str):
-        loaded = self.all.add_players(path)
-        print(f"read the data of {loaded} players")
+        self.all.load_players(path)
+        print(f"read the data of {self.all.number_of_players()} players")
 
 
 if __name__ == "__main__":
     app = AppInterface()
+    app.load_data("partial.json")
