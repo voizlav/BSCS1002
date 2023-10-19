@@ -3,23 +3,17 @@ import re
 
 def is_dotw(my_string: str):
     pattern = "^(mon|tue|wed|thu|fri|sat|sun)$"
-    if re.search(pattern, my_string, re.IGNORECASE):
-        return True
-    return False
+    return True if re.search(pattern, my_string, re.IGNORECASE) else False
 
 
 def all_vowels(my_string: str):
     pattern = "^[aeiou]+$"
-    if re.search(pattern, my_string, re.IGNORECASE):
-        return True
-    return False
+    return True if re.search(pattern, my_string, re.IGNORECASE) else False
 
 
 def time_of_day(my_string: str):
-    pattern = "^([0-1][0-9]|2[0-3])(:[0-5][0-9]){2}$"
-    if re.search(pattern, my_string):
-        return True
-    return False
+    pattern = "^([01][0-9]|2[0-3])(:[0-5][0-9]){2}$"
+    return True if re.search(pattern, my_string) else False
 
 
 if __name__ == "__main__":
