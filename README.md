@@ -118,6 +118,6 @@ The course continues right where the Introduction to Programming course ended, o
 2. [x] Programming exercise: Filtering attempts
 3. [x] Programming exercise: Study credits
 #### Regular expressions
-1. [ ] Programming exercise: Regular expressions
+1. [x] Programming exercise: Regular expressions
 2. [ ] Programming exercise: Hockey statistics
 3. [ ] Quiz: Feedback, part 12
