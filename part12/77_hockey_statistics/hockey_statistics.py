@@ -60,7 +60,11 @@ class AppInterface:
     def __init__(self):
         self.all = Players()
 
-    def print_commands(self):
+    def load_data(self, path: str):
+        self.all.load_players(path)
+        print(f"read the data of {self.all.number_of_players()} players\n")
+
+    def commands(self):
         print(
             f"commands:\n"
             f"0 quit\n"
@@ -70,17 +74,35 @@ class AppInterface:
             f"4 players in team\n"
             f"5 players from country\n"
             f"6 most points\n"
-            f"7 most goals"
+            f"7 most goals\n"
         )
 
-    def load_data(self, path: str):
-        self.all.load_players(path)
-        print(f"read the data of {self.all.number_of_players()} players\n")
+    def run(self):
+        get_path = input("file name: ")
+        self.load_data(get_path)
+        self.commands()
+        while True:
+            command = input("command: ")
+            if command == "0":
+                break
+            if command == "1":
+                break
+            if command == "2":
+                break
+            if command == "3":
+                break
+            if command == "4":
+                break
+            if command == "5":
+                break
+            if command == "6":
+                break
+            if command == "7":
+                break
 
 
 if __name__ == "__main__":
     app = AppInterface()
-    app.load_data("partial.json")
-    for player in app.all.players:
-        print(player)
-    app.print_commands()
+    app.run()
+    # for player in app.all.players:
+    #     print(player)
