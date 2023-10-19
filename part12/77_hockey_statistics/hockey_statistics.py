@@ -69,8 +69,7 @@ class AppInterface:
         self.all.load_players(path)
         print(f"read the data of {self.all.number_of_players()} players\n")
 
-    def print_player(self):
-        name = input("name: ")
+    def print_player(self, name: str):
         player = self.all.search_player(name)
         print()
         print(player)
@@ -97,7 +96,8 @@ class AppInterface:
             if command == "0":
                 break
             if command == "1":
-                self.print_player()
+                get_name = input("name: ")
+                self.print_player(get_name)
             if command == "2":
                 break
             if command == "3":
