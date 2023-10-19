@@ -51,6 +51,10 @@ class AppInterface:
     def __init__(self):
         self.all = Players()
 
+    def load_data(self, path: str):
+        loaded = self.all.add_players(path)
+        print(f"read the data of {loaded} players")
+
 
 if __name__ == "__main__":
     app = AppInterface()
