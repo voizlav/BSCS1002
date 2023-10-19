@@ -20,7 +20,17 @@ class Player:
 
 class Players:
     def __init__(self):
-        players = []
+        self.players = []
 
     def add_player(self, player: Player):
         self.players.append(player)
+
+
+class AppInterface:
+    def __init__(self):
+        self.all = Players()
+
+
+if __name__ == "__main__":
+    app = AppInterface()
+    print(app.all.players)
