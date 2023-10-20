@@ -20,12 +20,11 @@ class Player:
         self.team = team
         self.games = games
 
+    def points(self):
+        return self.goals + self.assists
+
     def __str__(self):
-        return (
-            f"{self.name:<20} {self.team} "
-            f"{self.goals:>3} + {self.assists:>2} = "
-            f"{self.goals + self.assists:>3}"
-        )
+        return f"{self.name:<20} {self.team} {self.goals:>3} + {self.assists:>2} = {self.points():>3}"
 
 
 class Players:
@@ -84,6 +83,10 @@ class AppInterface:
         for team in self.all.teams():
             print(team)
 
+    def print_countries(self):
+        for country in self.all.countries():
+            print(country)
+
     def commands(self):
         print(
             f"commands:\n"
@@ -111,7 +114,7 @@ class AppInterface:
             if command == "2":
                 self.print_teams()
             if command == "3":
-                break
+                self.print_countries()
             if command == "4":
                 break
             if command == "5":
