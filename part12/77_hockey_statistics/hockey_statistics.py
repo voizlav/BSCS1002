@@ -31,11 +31,12 @@ class Players:
     def __init__(self):
         self.players = []
 
-    def load_players(self, path: str):
+    def load_data(self, path: str):
         with open(path) as data:
-            players = json.loads(data.read())
+            return json.loads(data.read())
 
-        for player in players:
+    def add_players(self, players_data: list):
+        for player in players_data:
             self.add_player(
                 Player(
                     player["name"],
@@ -83,14 +84,13 @@ class AppInterface:
         self.all = Players()
 
     def load_data(self, path: str):
-        self.all.load_players(path)
-        total = self.all.number_of_players()
-        print(f"read the data of {total} players\n")
+        data = self.all.load_data(path)
+        self.all.add_players(data)
+        print(f"read the data of {len(self.all.players)} players\n")
 
     def print_player(self, name: str):
         print()
-        player = self.all.search_player(name)
-        print(player)
+        print(self.all.search_player(name))
 
     def print_teams(self):
         for team in self.all.teams():
