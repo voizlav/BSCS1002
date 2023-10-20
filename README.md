@@ -121,3 +121,28 @@ The course continues right where the Introduction to Programming course ended, o
 1. [x] Programming exercise: Regular expressions
 2. [x] Programming exercise: Hockey statistics
 3. [ ] Quiz: Feedback, part 12
+
+# Part 13
+
+#### Pygame
+1. [ ] Programming exercise: Four robots
+2. [ ] Programming exercise: Robots in a row
+3. [ ] Programming exercise: A hundred robots
+4. [ ] Programming exercise: Random robots
+#### Animation
+1. [ ] Programming exercise: Vertical movement
+2. [ ] Programming exercise: Round the perimeter
+3. [ ] Programming exercise: Two robots
+4. [ ] Programming exercise: Robots in a circle
+5. [ ] Programming exercise: Bouncing ball
+6. [ ] Programming exercise: Robot invasion
+#### Events
+1. [ ] Programming exercise: Four directions
+2. [ ] Programming exercise: Four walls
+3. [ ] Programming exercise: Two players
+4. [ ] Programming exercise: Robot and mouse
+5. [ ] Programming exercise: The location of the robot
+#### More pygame techniques
+1. [ ] Programming exercise: Clock
+2. [ ] Programming exercise: Asteroids
+3. [ ] Quiz: Feedback, part 13
