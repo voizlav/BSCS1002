@@ -66,6 +66,10 @@ class Players:
         countries = map(lambda player: player.nationality, self.players)
         return sorted(set(countries))
 
+    def search_team(self, team: str):
+        players = list(filter(lambda player: player.team == team, self.players))
+        return sorted(players, key=lambda player: player.points(), reverse=True)
+
 
 class AppInterface:
     def __init__(self):
@@ -127,4 +131,8 @@ class AppInterface:
 
 if __name__ == "__main__":
     app = AppInterface()
-    app.run()
+    # app.run()
+    app.load_data("all.json")
+
+    for p in app.all.search_team("OTT"):
+        print(p)
