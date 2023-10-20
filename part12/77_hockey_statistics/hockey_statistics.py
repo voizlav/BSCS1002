@@ -78,6 +78,9 @@ class Players:
         players = list(filter(lambda p: p.nationality == country, self.players))
         return sorted(players, key=self.order_by_points, reverse=True)
 
+    def order_by_goals(self, player: Player):
+        return (player.goals, -player.games)
+
 
 class AppInterface:
     def __init__(self):
