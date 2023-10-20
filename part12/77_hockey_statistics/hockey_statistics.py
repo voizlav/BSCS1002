@@ -66,13 +66,16 @@ class Players:
         countries = map(lambda player: player.nationality, self.players)
         return sorted(set(countries))
 
+    def order_by_points(self, player: Player):
+        return player.points()
+
     def search_team(self, team: str):
         players = list(filter(lambda player: player.team == team, self.players))
-        return sorted(players, key=lambda player: player.points(), reverse=True)
+        return sorted(players, key=self.order_by_points, reverse=True)
 
     def search_country(self, country: str):
         players = list(filter(lambda p: p.nationality == country, self.players))
-        return sorted(players, key=lambda player: player.points(), reverse=True)
+        return sorted(players, key=self.order_by_points, reverse=True)
 
 
 class AppInterface:
