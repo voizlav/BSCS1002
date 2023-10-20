@@ -68,7 +68,7 @@ class Players:
         return sorted(set(countries))
 
     def order_by_points(self, player: Player):
-        return player.points()
+        return (player.points(), player.goals)
 
     def search_team(self, team: str):
         players = list(filter(lambda player: player.team == team, self.players))
@@ -83,6 +83,9 @@ class Players:
 
     def search_goal_players(self, number: int):
         return sorted(self.players, key=self.order_by_goals, reverse=True)[:number]
+
+    def search_points_players(self, number: int):
+        return sorted(self.players, key=self.order_by_points, reverse=True)
 
 
 class AppInterface:
