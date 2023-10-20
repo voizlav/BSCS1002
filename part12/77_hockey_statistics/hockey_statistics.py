@@ -81,6 +81,9 @@ class Players:
     def order_by_goals(self, player: Player):
         return (player.goals, -player.games)
 
+    def search_goal_players(self, number: int):
+        return sorted(self.players, key=self.order_by_goals, reverse=True)[:number]
+
 
 class AppInterface:
     def __init__(self):
