@@ -116,6 +116,11 @@ class AppInterface:
         for player in self.all.search_country(name):
             print(player)
 
+    def print_goal_players(self, number: int):
+        print()
+        for player in self.all.search_goal_players(number):
+            print(player)
+
     def commands(self):
         print(
             f"commands:\n"
@@ -153,7 +158,8 @@ class AppInterface:
             if command == "6":
                 break
             if command == "7":
-                break
+                get_number = int(input("how many: "))
+                self.print_goal_players(get_number)
 
 
 if __name__ == "__main__":
