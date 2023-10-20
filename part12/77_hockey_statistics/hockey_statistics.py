@@ -31,9 +31,6 @@ class Players:
     def __init__(self):
         self.players = []
 
-    def add_player(self, player: Player):
-        self.players.append(player)
-
     def load_players(self, path: str):
         with open(path) as data:
             players = json.loads(data.read())
@@ -50,6 +47,9 @@ class Players:
                     player["games"],
                 )
             )
+
+    def add_player(self, player: Player):
+        self.players.append(player)
 
     def number_of_players(self):
         return len(self.players)
@@ -70,6 +70,10 @@ class Players:
         players = list(filter(lambda player: player.team == team, self.players))
         return sorted(players, key=lambda player: player.points(), reverse=True)
 
+    def search_country(self, country: str):
+        players = list(filter(lambda p: p.nationality == country, self.players))
+        return sorted(players, key=lambda player: player.points(), reverse=True)
+
 
 class AppInterface:
     def __init__(self):
@@ -77,7 +81,8 @@ class AppInterface:
 
     def load_data(self, path: str):
         self.all.load_players(path)
-        print(f"read the data of {self.all.number_of_players()} players\n")
+        total = self.all.number_of_players()
+        print(f"read the data of {total} players\n")
 
     def print_player(self, name: str):
         print()
@@ -138,4 +143,7 @@ class AppInterface:
 
 if __name__ == "__main__":
     app = AppInterface()
-    app.run()
+    # app.run()
+    app.load_data("partial.json")
+    for p in app.all.search_country("CAN"):
+        print(p)
