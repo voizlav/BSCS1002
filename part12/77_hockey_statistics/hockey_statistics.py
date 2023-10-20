@@ -105,6 +105,11 @@ class AppInterface:
         for player in self.all.search_team(name):
             print(player)
 
+    def print_country_players(self, name: str):
+        print()
+        for player in self.all.search_country(name):
+            print(player)
+
     def commands(self):
         print(
             f"commands:\n"
@@ -137,7 +142,8 @@ class AppInterface:
                 get_name = input("team: ")
                 self.print_team_players(get_name)
             if command == "5":
-                break
+                get_name = input("country: ")
+                self.print_country_players(get_name)
             if command == "6":
                 break
             if command == "7":
@@ -146,7 +152,4 @@ class AppInterface:
 
 if __name__ == "__main__":
     app = AppInterface()
-    # app.run()
-    app.load_data("partial.json")
-    for p in app.all.search_country("CAN"):
-        print(p)
+    app.run()
