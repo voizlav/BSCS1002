@@ -85,7 +85,7 @@ class Players:
         return sorted(self.players, key=self.order_by_goals, reverse=True)[:number]
 
     def search_points_players(self, number: int):
-        return sorted(self.players, key=self.order_by_points, reverse=True)
+        return sorted(self.players, key=self.order_by_points, reverse=True)[:number]
 
 
 class AppInterface:
@@ -124,6 +124,11 @@ class AppInterface:
         for player in self.all.search_goal_players(number):
             print(player)
 
+    def print_points_players(self, number: int):
+        print()
+        for player in self.all.search_points_players(number):
+            print(player)
+
     def commands(self):
         print(
             f"commands:\n"
@@ -159,7 +164,8 @@ class AppInterface:
                 get_name = input("country: ")
                 self.print_country_players(get_name)
             if command == "6":
-                break
+                get_number = int(input("how many: "))
+                self.print_points_players(get_number)
             if command == "7":
                 get_number = int(input("how many: "))
                 self.print_goal_players(get_number)
