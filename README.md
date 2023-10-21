@@ -126,7 +126,7 @@ The course continues right where the Introduction to Programming course ended, o
 
 #### Pygame
 1. [x] Programming exercise: Four robots
-2. [ ] Programming exercise: Robots in a row
+2. [x] Programming exercise: Robots in a row
 3. [ ] Programming exercise: A hundred robots
 4. [ ] Programming exercise: Random robots
 #### Animation
