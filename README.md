@@ -131,7 +131,7 @@ The course continues right where the Introduction to Programming course ended, o
 4. [x] Programming exercise: Random robots
 #### Animation
 1. [x] Programming exercise: Vertical movement
-2. [ ] Programming exercise: Round the perimeter
+2. [x] Programming exercise: Round the perimeter
 3. [ ] Programming exercise: Two robots
 4. [ ] Programming exercise: Robots in a circle
 5. [ ] Programming exercise: Bouncing ball
