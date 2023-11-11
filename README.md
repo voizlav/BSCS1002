@@ -134,7 +134,7 @@ The course continues right where the Introduction to Programming course ended, o
 2. [x] Programming exercise: Round the perimeter
 3. [x] Programming exercise: Two robots
 4. [ ] Programming exercise: Robots in a circle
-5. [ ] Programming exercise: Bouncing ball
+5. [x] Programming exercise: Bouncing ball
 6. [ ] Programming exercise: Robot invasion
 #### Events
 1. [ ] Programming exercise: Four directions
