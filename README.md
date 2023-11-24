@@ -138,7 +138,7 @@ The course continues right where the Introduction to Programming course ended, o
 6. [x] Programming exercise: Robot invasion
 #### Events
 1. [x] Programming exercise: Four directions
-2. [ ] Programming exercise: Four walls
+2. [x] Programming exercise: Four walls
 3. [ ] Programming exercise: Two players
 4. [ ] Programming exercise: Robot and mouse
 5. [ ] Programming exercise: The location of the robot
