@@ -141,7 +141,7 @@ The course continues right where the Introduction to Programming course ended, o
 2. [x] Programming exercise: Four walls
 3. [x] Programming exercise: Two players
 4. [x] Programming exercise: Robot and mouse
-5. [ ] Programming exercise: The location of the robot
+5. [x] Programming exercise: The location of the robot
 #### More pygame techniques
 1. [ ] Programming exercise: Clock
 2. [ ] Programming exercise: Asteroids
